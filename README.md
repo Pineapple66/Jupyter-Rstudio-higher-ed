@@ -40,9 +40,9 @@ Step1, open jupyterhub and login, click new --> terminal
 
 Step2, issue the command to install packages 
 
-''' 
+```
 sudo -E pip install pandas   (pandas is the name of the python package) 
-'''
+```
 
 so far, sklearn, numpy, matplotlib, pandas, tensorflow, GYM, pytorch are installed
 
@@ -55,9 +55,9 @@ Step1, for now, Login to server from SSH, then issue sudo R
 
 Step2, same as install R packages from windows enviroment 
 
-'''
+```
 install.packages("fpp2", repos='http://cran.us.r-project.org') 
-'''
+```
 
 Step3, setting up the R studio server
 https://rstudio.com/products/rstudio/download-server/debian-ubuntu/ 
