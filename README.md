@@ -51,7 +51,7 @@ NOTES: pip is for python2 packages, pip3 is for python3 packages.
 When you see "no module found" on the jupyter, please make sure that you packages are being installed by the correct version of pip. 
 
 ### 6. Install packages required R and Rstudio ### 
-Step1, for now, Login to server from SSH, then issue sudo R
+Step1, for now, login to server from SSH, then issue sudo R
 
 Step2, same as install R packages from windows enviroment 
 
