@@ -2,7 +2,7 @@
 This is a build log for DSC1(Data Science 1) in an Higher-ed environment
 
 
-## End goal, An Data Analyst server with some security features for internal research faculty members. ##
+## End goal, An Machine Learning server with some security features for internal research faculty members. ##
 
 
 ### 1. Getting an Ubuntu server 19.10 ready ### 
@@ -36,11 +36,15 @@ so far, we have sklearn, numpy, matplotlib, pandas, tensorflow, GYM, pytorch ins
 NOTES: pip is for python2 packages, pip3 is for python3 packages. 
 When you see "no module found" on the jupyter, please make sure that you packages are being installed by the correct version of pip. 
 
-### 6. Install packages required R ### 
+### 6. Install packages required R and Rstudio ### 
 Step1, for now, Login to server from SSH, then issue sudo R
 Step2, same as install R packages from windows enviroment 
 
 install.packages("RCurl", repos='http://cran.us.r-project.org') 
+
+Step3, setting up the R studio server
+https://rstudio.com/products/rstudio/download-server/debian-ubuntu/ 
+Step4, now you can access your R studio server from your browser 
 
 ### 7. Lession learned ###  
 7.1 In order to have all the kernels that you may ever wanted, install jupyter in this sequence 
@@ -48,6 +52,8 @@ install.packages("RCurl", repos='http://cran.us.r-project.org')
 7.2 Letsencrypt for HTTPS is easy, if this project goes well, an offcial cert will be install 
 7.3 Timeout on Notebook, active sessions needs to be limited 
 7.4 Pip just one of the ways to install the packages for python, Conda (anaconda, is also a great package manager for python)
+7.5 Networking monitoring tool nethogs, glances is newly installed, TCPdump shows some unkown hosts are scanning us. 
+7.6 Jupyterhub can also be done in kubernetes clusters, with Helm manager for high performance OR docker for lightweight development built. 
 
 ### 8. Migrate plan p2v vmware vSphere (mainly for backup and future support) ###
 8.1 Boss is requesting an backup plan with this project. 
